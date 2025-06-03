@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { toast } from 'sonner'
-import { useClassPlanStore } from './src/store/ClassPlanStore'
-import { Button } from './src/components/ui/button'
+import { useClassPlanStore } from '@/store/ClassPlanStore'
+import { Button } from '@/components/ui/button'
 import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from './src/components/ui/dialog'
-import { Input } from './src/components/ui/input'
+} from '@/components/ui/dialog'
+import { Input } from '@/components/ui/input'
 import { formatISO } from 'date-fns'
 
 type ClassPlanCreateProps = {

@@ -1,21 +1,21 @@
 import { useState } from 'react'
 
-import { Button } from './src/components/ui/button'
+import { Button } from '@/components/ui/button'
 import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from './src/components/ui/dialog'
-import { Input } from './src/components/ui/input'
+} from '@/components/ui/dialog'
+import { Input } from '@/components/ui/input'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from './src/components/ui/select'
-import { useAuthStore } from './src/store/authStore'
-import { userStore } from './src/store/userStore'
+} from '@/components/ui/select'
+import { useAuthStore } from '@/store/authStore'
+import { userStore } from '@/store/userStore'
 import { toast } from 'sonner'
 
 interface User {

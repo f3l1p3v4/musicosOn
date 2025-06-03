@@ -3,7 +3,7 @@ import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import { Toaster } from 'sonner'
 
-import { ThemeProvider } from './src/components/theme/theme-provider'
+import { ThemeProvider } from '@/components/theme/theme-provider'
 
 import { router } from './routes'
 

@@ -1,13 +1,13 @@
 'use client'
 
-import { Card, CardContent } from './src/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import {
   Table,
   TableBody,
   TableHead,
   TableHeader,
   TableRow,
-} from './src/components/ui/table'
+} from '@/components/ui/table'
 
 import { ClassPlanTableRow } from './class-plan-table-row'
 

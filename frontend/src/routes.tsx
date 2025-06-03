@@ -1,8 +1,8 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom'
 import { toast } from 'sonner'
-import { isTokenExpired } from './src/utils/auth'
+import { isTokenExpired } from '@/utils/auth'
 
-import { useAuthStore } from './src/store/authStore'
+import { useAuthStore } from '@/store/authStore'
 
 import { AppLayout } from './pages/_layouts/app'
 import { AuthLayout } from './pages/_layouts/auth'

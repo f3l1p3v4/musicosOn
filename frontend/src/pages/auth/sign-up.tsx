@@ -3,9 +3,9 @@ import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'sonner'
 import { z } from 'zod'
 
-import { Button } from './src/components/ui/button'
-import { Input } from './src/components/ui/input'
-import { Label } from './src/components/ui/label'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 
 const signUpForm = z.object({
   instrument: z.string(),

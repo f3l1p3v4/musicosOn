@@ -1,6 +1,6 @@
 'use client'
 
-import { TableCell, TableRow } from './src/components/ui/table'
+import { TableCell, TableRow } from '@/components/ui/table'
 
 interface ClassPlanTableRowProps {
   plan: {

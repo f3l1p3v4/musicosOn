@@ -1,8 +1,8 @@
 import { ContactRound } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 
-import { Card, CardContent, CardHeader, CardTitle } from './src/components/ui/card'
-import { useAuthStore } from './src/store/authStore'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { useAuthStore } from '@/store/authStore'
 
 export function Frequency() {
   const { id } = useAuthStore()

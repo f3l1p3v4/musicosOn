@@ -3,9 +3,9 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { Avatar, AvatarFallback, AvatarImage } from './src/components/ui/avatar'
-import { useAuthStore } from './src/store/authStore' // Pegamos o ID e token do authStore
-import { useProfileStore } from './src/store/profileStore'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { useAuthStore } from '@/store/authStore' // Pegamos o ID e token do authStore
+import { useProfileStore } from '@/store/profileStore'
 
 export function Perfil() {
   const { user, loading, error, fetchUser } = useProfileStore()

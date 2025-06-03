@@ -1,8 +1,8 @@
 import { Edit } from 'lucide-react'
 
-import { Button } from './src/components/ui/button'
-import { Dialog, DialogTrigger } from './src/components/ui/dialog'
-import { TableCell, TableRow } from './src/components/ui/table'
+import { Button } from '@/components/ui/button'
+import { Dialog, DialogTrigger } from '@/components/ui/dialog'
+import { TableCell, TableRow } from '@/components/ui/table'
 
 interface User {
   id: string
