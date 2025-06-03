@@ -1,13 +1,19 @@
-FROM node:20
-
+# Etapa de build
+FROM node:20 AS build
 WORKDIR /app
 
 COPY package*.json ./
-
 RUN npm install
 
 COPY . .
+RUN npm run build  # <- Isso compila o TypeScript para dist/
 
-EXPOSE 3333
+# Etapa final
+FROM node:20
+WORKDIR /app
 
-CMD ["npm", "run", "start"]
+COPY --from=build /app/dist ./dist
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/package*.json ./
+
+CMD ["node", "dist/index.js"]
