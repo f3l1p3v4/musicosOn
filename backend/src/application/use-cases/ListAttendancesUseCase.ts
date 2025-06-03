@@ -1,4 +1,4 @@
-import { IAttendanceRepository } from './src/application/interfaces/IAttendanceRepository'
+import { IAttendanceRepository } from '../../application/interfaces/IAttendanceRepository'
 import { Attendance } from '@prisma/client'
 
 export class ListAttendanceUseCase {

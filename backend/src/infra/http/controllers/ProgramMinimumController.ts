@@ -1,10 +1,10 @@
 import { Request, Response } from 'express'
-import { CreateProgramMinimumUseCase } from './src/application/use-cases/CreateProgramMinimumUseCase'
-import { ListProgramMinimumsUseCase } from './src/application/use-cases/ListProgramMinimumsUseCase'
-import { UpdateProgramMinimumUseCase } from './src/application/use-cases/UpdateProgramMinimumUseCase'
-import { DeleteProgramMinimumUseCase } from './src/application/use-cases/DeleteProgramMinimumUseCase'
-import { ProgramMinimumRepository } from './src/infra/repositories/ProgramMinimumRepository'
-import { CreateProgramMinimumDTO } from './src/application/dtos/CreateProgramMinimumDTO'
+import { CreateProgramMinimumUseCase } from '../../../application/use-cases/CreateProgramMinimumUseCase'
+import { ListProgramMinimumsUseCase } from '../../../application/use-cases/ListProgramMinimumsUseCase'
+import { UpdateProgramMinimumUseCase } from '../../../application/use-cases/UpdateProgramMinimumUseCase'
+import { DeleteProgramMinimumUseCase } from '../../../application/use-cases/DeleteProgramMinimumUseCase'
+import { ProgramMinimumRepository } from '../../../infra/repositories/ProgramMinimumRepository'
+import { CreateProgramMinimumDTO } from '../../../application/dtos/CreateProgramMinimumDTO'
 
 const programMinimumRepository = new ProgramMinimumRepository()
 

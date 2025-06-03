@@ -1,13 +1,13 @@
 import { Router } from 'express'
-import { ClassPlanController } from './src/infra/http/controllers/ClassPlanController'
+import { ClassPlanController } from '../../../infra/http/controllers/ClassPlanController'
 import {
   ensureAuthenticated,
   ensureInstructor,
-} from './src/infra/http/middlewares/auth'
-import { ClassPlanRepository } from './src/infra/repositories/ClassPlanRepository'
-import { CreateClassPlanUseCase } from './src/application/use-cases/CreateClassPlanUseCase'
-import { ListClassPlansUseCase } from './src/application/use-cases/ListClassPlansUseCase'
-import { UpdateClassPlanUseCase } from './src/application/use-cases/UpdateClassPlanUseCase'
+} from '../../../infra/http/middlewares/auth'
+import { ClassPlanRepository } from '../../../infra/repositories/ClassPlanRepository'
+import { CreateClassPlanUseCase } from '../../../application/use-cases/CreateClassPlanUseCase'
+import { ListClassPlansUseCase } from '../../../application/use-cases/ListClassPlansUseCase'
+import { UpdateClassPlanUseCase } from '../../../application/use-cases/UpdateClassPlanUseCase'
 
 const router = Router()
 const classPlanRepository = new ClassPlanRepository()

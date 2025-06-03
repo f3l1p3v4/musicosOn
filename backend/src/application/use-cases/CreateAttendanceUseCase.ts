@@ -1,6 +1,6 @@
-import { IAttendanceRepository } from './src/application/interfaces/IAttendanceRepository'
+import { IAttendanceRepository } from '../../application/interfaces/IAttendanceRepository'
 import { Attendance } from '@prisma/client'
-import { CreateAttendanceDTO } from './src/application/dtos/CreateAttendanceDTO'
+import { CreateAttendanceDTO } from '../../application/dtos/CreateAttendanceDTO'
 
 export class CreateAttendanceUseCase {
   // eslint-disable-next-line no-useless-constructor
