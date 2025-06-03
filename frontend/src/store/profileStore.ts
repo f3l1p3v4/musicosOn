@@ -27,7 +27,7 @@ export const useProfileStore = create<ProfileStoreState>((set) => ({
 
     try {
       const response = await axios.get<User>(
-        `http://localhost:3333/users/${userId}`,
+        `http://45.90.12.123:3333/users/${userId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         },

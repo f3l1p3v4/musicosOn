@@ -1,4 +1,4 @@
-@baseUrl = http://localhost:3333
+@baseUrl = http://45.90.12.123:3333
 @authToken = {{login.response.body.token.token}}
 
 
