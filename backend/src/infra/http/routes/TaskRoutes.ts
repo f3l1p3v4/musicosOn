@@ -3,7 +3,7 @@ import TaskController from '../controllers/TaskController'
 import {
   ensureAuthenticated,
   ensureInstructor,
-} from '@/infra/http/middlewares/auth'
+} from './src/infra/http/middlewares/auth'
 
 const router = Router()
 

@@ -1,5 +1,5 @@
-import { ITaskRepository } from '@/application/interfaces/ITaskRepository'
-// import { UpdateTaskStatusDTO } from '@/application/dtos/UpdateTaskStatusDTO'
+import { ITaskRepository } from './src/application/interfaces/ITaskRepository'
+// import { UpdateTaskStatusDTO } from './src/application/dtos/UpdateTaskStatusDTO'
 import { Task } from '@prisma/client'
 
 export class UpdateTaskStatusUseCase {

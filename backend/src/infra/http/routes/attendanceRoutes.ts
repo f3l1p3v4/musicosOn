@@ -1,11 +1,11 @@
 // src/infra/http/routes/AttendanceRoute.ts
 
 import { Router } from 'express'
-import { createAttendanceController } from '@/infra/http/controllers/AttendanceController'
+import { createAttendanceController } from './src/infra/http/controllers/AttendanceController'
 import {
   ensureAuthenticated,
   ensureInstructor,
-} from '@/infra/http/middlewares/auth'
+} from './src/infra/http/middlewares/auth'
 
 const router = Router()
 

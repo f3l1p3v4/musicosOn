@@ -8,13 +8,13 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table'
+} from './src/components/ui/table'
 
-import { Button } from '@/components/ui/button'
-import { Dialog, DialogTrigger } from '@/components/ui/dialog'
+import { Button } from './src/components/ui/button'
+import { Dialog, DialogTrigger } from './src/components/ui/dialog'
 
-import { useAuthStore } from '@/store/authStore'
-import { userStore } from '@/store/userStore'
+import { useAuthStore } from './src/store/authStore'
+import { userStore } from './src/store/userStore'
 
 import { UserTableRow } from './user-table-row'
 import { UserCreate } from './user-create'

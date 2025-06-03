@@ -1,21 +1,21 @@
 import { useState } from 'react'
 import { toast } from 'sonner'
 import { z } from 'zod'
-import { userStore } from '@/store/userStore'
-import { Button } from '@/components/ui/button'
+import { userStore } from './src/store/userStore'
+import { Button } from './src/components/ui/button'
 import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog'
-import { Input } from '@/components/ui/input'
+} from './src/components/ui/dialog'
+import { Input } from './src/components/ui/input'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select'
+} from './src/components/ui/select'
 
 // Enums e labels
 export enum UserRole {

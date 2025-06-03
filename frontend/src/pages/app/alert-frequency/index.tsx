@@ -2,8 +2,8 @@
 
 // import { MessageCircle } from 'lucide-react'
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Dialog, DialogTrigger } from '@/components/ui/dialog'
+import { Card, CardContent, CardHeader, CardTitle } from './src/components/ui/card'
+import { Dialog, DialogTrigger } from './src/components/ui/dialog'
 
 import { ConfirmationMessage } from './confirmation-message'
 

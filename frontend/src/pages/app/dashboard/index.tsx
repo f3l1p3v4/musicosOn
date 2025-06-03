@@ -1,11 +1,11 @@
-// import { CardAlertFrequency } from '@/components/card-alert-frequency'
+// import { CardAlertFrequency } from './src/components/card-alert-frequency'
 import { useEffect } from 'react'
-import { useAuthStore } from '@/store/authStore'
+import { useAuthStore } from './src/store/authStore'
 
 import { Call } from './call'
 import { Frequency } from './frequency'
 import { FrequencyStudent } from './frequency-student'
-import { useAttendanceStore } from '@/store/callListStore'
+import { useAttendanceStore } from './src/store/callListStore'
 // import { Task } from './task'
 // import { TaskStudent } from './task-student'
 

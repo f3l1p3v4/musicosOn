@@ -1,12 +1,12 @@
 import express from 'express'
 import cors from 'cors'
 
-import { UserRoutes } from '@/infra/http/routes/UserRoutes'
-import { TaskRoutes } from '@/infra/http/routes/TaskRoutes'
-import { NoticeRoute } from '@/infra/http/routes/NoticeRoute'
-import { ProgramMinimumRoute } from '@/infra/http/routes/ProgramMinimumRoute'
-import { AttendanceRoute } from '@/infra/http/routes/attendanceRoutes'
-import { classPlanRoutes } from '@/infra/http/routes/ClassPlanRoutes'
+import { UserRoutes } from './src/infra/http/routes/UserRoutes'
+import { TaskRoutes } from './src/infra/http/routes/TaskRoutes'
+import { NoticeRoute } from './src/infra/http/routes/NoticeRoute'
+import { ProgramMinimumRoute } from './src/infra/http/routes/ProgramMinimumRoute'
+import { AttendanceRoute } from './src/infra/http/routes/attendanceRoutes'
+import { classPlanRoutes } from './src/infra/http/routes/ClassPlanRoutes'
 
 const app = express()
 app.use(express.json())

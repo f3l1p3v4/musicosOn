@@ -1,13 +1,13 @@
 import { MessageCircle } from 'lucide-react' // Ícone do WhatsApp
 import { NavLink } from 'react-router-dom'
 
-import { Button } from '@/components/ui/button'
+import { Button } from './src/components/ui/button'
 import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog'
-import { Textarea } from '@/components/ui/textarea' // Para um input de texto maior
+} from './src/components/ui/dialog'
+import { Textarea } from './src/components/ui/textarea' // Para um input de texto maior
 
 export function ConfirmationMessage() {
   return (

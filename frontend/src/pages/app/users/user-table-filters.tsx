@@ -1,14 +1,14 @@
 import { Search, X } from 'lucide-react'
 
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import { Button } from './src/components/ui/button'
+import { Input } from './src/components/ui/input'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select'
+} from './src/components/ui/select'
 
 export function UserTableFilters() {
   return (

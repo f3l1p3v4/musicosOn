@@ -7,11 +7,11 @@ import {
   SheetClose,
 } from './ui/sheet'
 import { Separator } from './ui/separator'
-import { Button } from '@/components/ui/button'
+import { Button } from './src/components/ui/button'
 
 import { MenuIcon, LogOut, BookOpenText, FileText, Users2, User2Icon } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
-import { useAuthStore } from '@/store/authStore'
+import { useAuthStore } from './src/store/authStore'
 import { NavLink } from './nav-link'
 // import { ThemeToggle } from './theme/theme-toggle'
 

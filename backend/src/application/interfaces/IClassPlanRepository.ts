@@ -1,6 +1,6 @@
-import { ClassPlan } from '@/domain/entities/ClassPlan'
+import { ClassPlan } from './src/domain/entities/ClassPlan'
 import { Group } from '@prisma/client'
-import { CreateClassPlanDTO } from '@/application/dtos/CreateClassPlanDTO'
+import { CreateClassPlanDTO } from './src/application/dtos/CreateClassPlanDTO'
 
 export interface IClassPlanRepository {
   create(data: CreateClassPlanDTO): Promise<ClassPlan>
