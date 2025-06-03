@@ -27,10 +27,9 @@ services:
   frontend:
     build: ./frontend
     container_name: musicoson-frontend
-    restart: always
-    depends_on:
-      - backend
-    command: ["npm", "run", "build"]
+    restart: on-failure
+    volumes:
+      - frontend-build:/dist
 
   nginx:
     image: nginx:alpine
@@ -38,7 +37,7 @@ services:
     restart: always
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - ./frontend/dist:/usr/share/nginx/html
+      - frontend-build:/usr/share/nginx/html
     ports:
       - "80:80"
     depends_on:
@@ -47,3 +46,4 @@ services:
 
 volumes:
   pgdata:
+  frontend-build:
