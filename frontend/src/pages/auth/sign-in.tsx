@@ -35,7 +35,7 @@ export function SignIn() {
   async function handleSignIn(data: SignInForm) {
     try {
       const response = await axios.post(
-        'http://backend:3333/users/login',
+        'http://31.97.26.156/api/users/login',
         data,
       )
 

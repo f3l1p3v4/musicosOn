@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useAuthStore } from '@/store/authStore'
 
 export const api = axios.create({
-  baseURL: 'http://backend:3333',
+  baseURL: 'http://31.97.26.156/api',
 })
 
 api.interceptors.request.use(

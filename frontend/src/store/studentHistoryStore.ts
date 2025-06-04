@@ -60,7 +60,7 @@ export const useStudentHistoryStore = create<StudentHistoryStore>((set) => ({
       set({ isLoading: true, error: null })
 
       const response = await fetch(
-        `http://backend:3333/attendance/student/${studentId}`,
+        `http://31.97.26.156/api/attendance/student/${studentId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -91,7 +91,7 @@ export const useStudentHistoryStore = create<StudentHistoryStore>((set) => ({
     try {
       set({ isLoading: true, error: null, message: null })
 
-      const response = await fetch('http://backend:3333/attendance', {
+      const response = await fetch('http://31.97.26.156/api/attendance', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,

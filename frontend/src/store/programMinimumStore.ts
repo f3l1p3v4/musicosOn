@@ -21,7 +21,7 @@ export const useProgramMinimumStore = create<ProgramMinimumStore>((set) => ({
 
   fetchProgramMinimum: async (token) => {
     try {
-      const response = await fetch(`http://backend:3333/program-minimum`, {
+      const response = await fetch(`http://31.97.26.156/api/program-minimum`, {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,
